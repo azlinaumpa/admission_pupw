@@ -26,7 +26,6 @@
               <th class="wd-20p">EMAIL</th>
               <th class="wd-15p">PHONE</th>
               <th class="wd-20p">STATUS</th>
-              <th class="wd-20p">OFFERED COURSE</th>
               <th class="wd-20p">ACTION</th>
             </tr>
           </thead>
@@ -40,19 +39,16 @@
                         <td>{{$student->email}}</td>
                         <td>{{$student->phone}}</td>
                         <td>{{$student->app_status}}</td>
-                        <td>{{$student->offered_course}}</td>
                         <td><a href="{{ route('application.edit',$student->user_id)}}" class="btn btn-primary">Edit</a></td>
                         </tr>
             @endforeach
           </tbody>
         </table>
-      
-        
-          </div>
-    
-        
+
      </div></div>
      </div><!-- card-body -->
     </div><!-- card -->
 </div><!-- col --></div>
+
+
 @endsection

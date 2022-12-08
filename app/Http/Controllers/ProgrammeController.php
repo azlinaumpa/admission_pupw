@@ -1,11 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
+use DB;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use App\Models\ProgrammeApp;
 use App\Models\User;
 
-class RegistController extends Controller
+class ProgrammeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +17,10 @@ class RegistController extends Controller
      */
     public function index()
     {
-        $user = User::all();
-        
-        return view('regist.index', compact('user'));
+        $user = Auth::user();
+        $programme_app = ProgrammeApp::where('ic', '=', $user->ic)->first();
+        $programme =DB::table('programme')->select('pg_code','pg_name')->get();
+        return view('programme.index',['programme'=>$programme,'programme_app'=>$programme_app, 'user'=>$user]);
     }
 
     /**
@@ -71,7 +75,14 @@ class RegistController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // $user = User::find($id);
+        $programme = ProgrammeApp::where('user_id',$id)->first();
+        
+        $programme->first_choice = $request->input('first_choice');
+        $programme->second_choice = $request->input('second_choice');
+        $programme->third_choice = $request->input('third_choice');
+        $programme->save();
+        return redirect('/programme')->with('success', 'Record saved.');
     }
 
     /**
@@ -82,8 +93,6 @@ class RegistController extends Controller
      */
     public function destroy($id)
     {
-        $user = User::find($id);
-        $user->delete();
-        return redirect('/regist');
+        //
     }
 }

@@ -59,4 +59,8 @@ class User extends Authenticatable
     public function document(){
         return $this->belongsTo(Document::class);
     }
+
+    public function programme(){
+        return $this->belongsTo(ProgrammeApp::class);
+    }
 }

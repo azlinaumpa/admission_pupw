@@ -274,13 +274,15 @@
                 <div class="col-md-5 col-lg-4">
                     <div class="form-group">
                         <label class="form-control-label">Email: </label>
-                        <input id="emailp1" class="form-control" name="emailp1" type="text" value="{{$application2->p1_email}}" readonly>
+                        <input id="emailp1" class="form-control" name="emailp1" type="text"
+                            value="{{$application2->p1_email}}" readonly>
                     </div><!-- form group -->
                 </div><!-- col -->
                 <div class="col-md-5 col-lg-4">
                     <div class="form-group">
                         <label class="form-control-label">Phone: </label>
-                        <input id="phonep1" class="form-control" name="phonep1" type="text" value="{{$application2->p1_phone}}" readonly>
+                        <input id="phonep1" class="form-control" name="phonep1" type="text"
+                            value="{{$application2->p1_phone}}" readonly>
                     </div><!-- form group -->
                 </div><!-- col -->
             </div><!-- row -->
@@ -343,7 +345,8 @@
                 <div class="col-md-5 col-lg-4">
                     <div class="form-group">
                         <label class="form-control-label">No OKU: <span class="tx-danger">if relatable</span></label>
-                        <input id="nookup1" class="form-control" name="nookup1" type="text" value="{{$application2->p1_nooku}}" readonly>
+                        <input id="nookup1" class="form-control" name="nookup1" type="text"
+                            value="{{$application2->p1_nooku}}" readonly>
                     </div><!-- form group -->
                 </div><!-- col -->
                 <div class="col-md-5 col-lg-4">
@@ -351,7 +354,7 @@
                         <label class="form-control-label">Income Parent/Guardian1: <span
                                 class="tx-danger"></span></label>
                         <input id="" class="form-control" placeholder="ENTER INCOME PARENT1" name="p1_income"
-                            type="text" value="{{$application2->p1_income}}" >
+                            type="text" value="{{$application2->p1_income}}" readonly>
                     </div><!-- form group -->
                 </div><!-- col -->
             </div><!-- row -->
@@ -393,13 +396,15 @@
                 <div class="col-md-5 col-lg-4">
                     <div class="form-group">
                         <label class="form-control-label">Email: </label>
-                        <input id="emailp2" class="form-control" name="emailp2" type="text" value="{{$application2->p2_email}}" readonly>
+                        <input id="emailp2" class="form-control" name="emailp2" type="text"
+                            value="{{$application2->p2_email}}" readonly>
                     </div><!-- form group -->
                 </div><!-- col -->
                 <div class="col-md-5 col-lg-4">
                     <div class="form-group">
                         <label class="form-control-label">Phone: </label>
-                        <input id="phonep1" class="form-control" name="phonep2" type="text" value="{{$application2->p2_phone}}" readonly>
+                        <input id="phonep1" class="form-control" name="phonep2" type="text"
+                            value="{{$application2->p2_phone}}" readonly>
                     </div><!-- form group -->
                 </div><!-- col -->
             </div><!-- row -->
@@ -463,7 +468,8 @@
                 <div class="col-md-5 col-lg-4">
                     <div class="form-group">
                         <label class="form-control-label">No OKU: <span class="tx-danger">if relatable</span></label>
-                        <input id="nookup2" class="form-control" name="nookup2" type="text" value="{{$application2->p2_nooku}}" readonly>
+                        <input id="nookup2" class="form-control" name="nookup2" type="text"
+                            value="{{$application2->p2_nooku}}" readonly>
                     </div><!-- form group -->
                 </div><!-- col -->
             </div><!-- row -->
@@ -475,7 +481,7 @@
                         <label class="form-control-label">Income Parent/Guardian2: <span
                                 class="tx-danger"></span></label>
                         <input id="" class="form-control" placeholder="ENTER INCOME PARENT2" name="p2_income"
-                            type="text" value="{{$application2->p2_income}}" >
+                            type="text" value="{{$application2->p2_income}}" readonly>
                     </div><!-- form group -->
                 </div><!-- col -->
                 <div class="col-md-5 col-lg-4">
@@ -492,7 +498,7 @@
                         </select>
                     </div><!-- form group -->
                 </div><!-- col -->
-                
+
 
 
             </div><!-- card -->
@@ -540,16 +546,17 @@
                 <div class="col-md-12 col-lg-6">
                     <div class="form-group">
                         <label class="form-control-label">SPM Number: </label>
-                        <input id="" class="form-control" name="spmnumber" placeholder="Enter SPM Number" value="{{$academic->spm_number}}"
-                            type="text" style="text-transform:uppercase" readonly>
+                        <input id="" class="form-control" name="spmnumber" placeholder="Enter SPM Number"
+                            value="{{$academic->spm_number}}" type="text" style="text-transform:uppercase" readonly>
                     </div><!-- form group -->
                 </div><!-- col -->
                 <div class="col-md-12 col-lg-6">
                     <div class="form-group">
                         <label class="form-control-label">Year of SPM: </label>
-                        <input id="" class="form-control" name="spmyear" placeholder="Enter Year of SPM" value="{{$academic->spm_year}}"
-                            type="number" onKeyPress="if(this.value.length==4) return false;"
-                            style="text-transform:uppercase" readonly>
+                        <input id="" class="form-control" name="spmyear" placeholder="Enter Year of SPM"
+                            value="{{$academic->spm_year}}" type="number"
+                            onKeyPress="if(this.value.length==4) return false;" style="text-transform:uppercase"
+                            readonly>
                     </div><!-- form group -->
                 </div><!-- col -->
             </div><!-- row -->
@@ -570,8 +577,8 @@
                 <div class="col-md-12 col-lg-6">
                     <div class="form-group">
                         <label class="form-control-label">School Name: </label>
-                        <input id="" class="form-control" name="schoolname" placeholder="Enter School Name" value="{{$academic->school_name}}"
-                            type="text" style="text-transform:uppercase" readonly>
+                        <input id="" class="form-control" name="schoolname" placeholder="Enter School Name"
+                            value="{{$academic->school_name}}" type="text" style="text-transform:uppercase" readonly>
                     </div><!-- form group -->
                 </div><!-- col -->
             </div><!-- row -->
@@ -580,10 +587,10 @@
                     <div class="form-group">
                         <label for="seeAnotherField" class="form-control-label">Stream: <span
                                 class="tx-danger">*</span></label>
-                            <select name="spm_aliran" class="form-control select2 something1" id="aliran"  disabled>
-                                <option value="0" {{$academic->spm_aliran == '0'  ? 'selected' : ''}}>Select</option>
-                                <option value="A" {{$academic->spm_aliran == 'A'  ? 'selected' : ''}}>SASTERA</option>
-                                <option value="S" {{$academic->spm_aliran == 'S'  ? 'selected' : ''}}>SAINS</option>
+                        <select name="spm_aliran" class="form-control select2 something1" id="aliran" disabled>
+                            <option value="0" {{$academic->spm_aliran == '0'  ? 'selected' : ''}}>Select</option>
+                            <option value="A" {{$academic->spm_aliran == 'A'  ? 'selected' : ''}}>SASTERA</option>
+                            <option value="S" {{$academic->spm_aliran == 'S'  ? 'selected' : ''}}>SAINS</option>
 
                         </select>
                     </div><!-- form group -->
@@ -615,77 +622,303 @@
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td><input type="text" class="form-control" value="" readonly></td>
-                            <td><input type="text" class="form-control" value="{{$gred1->spm_grade}}" readonly></td>
+                            <td> <select name="sub8" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_subject as $spm_subject1)
+                                    <option value="{{ $spm_subject1->subject_code_no }}"
+                                        {{$academic->kodspm1 == $spm_subject1->subject_code_no  ? 'selected' : ''}}>
+                                        {{ $spm_subject1->subject_name}}</option>
+                                    @endforeach
+                                </select></td>
+                            <td><select name="gred8" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_grade as $spm_grade1)
+                                    <option value="{{ $spm_grade1->spm_code,$spm_grade1->value_grade }}"
+                                        {{$academic->gredspm1 == $spm_grade1->spm_code  ? 'selected' : ''}}>
+                                        {{ $spm_grade1->spm_grade}}</option>
+                                    @endforeach
+                                </select>
+                            </td>
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td><input type="text" class="form-control" value="" readonly></td>
-                            <td><input type="text" class="form-control" value="{{$gred2->spm_grade}}" readonly></td>
+                            <td> <select name="sub8" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_subject as $spm_subject1)
+                                    <option value="{{ $spm_subject1->subject_code_no }}"
+                                        {{$academic->kodspm2 == $spm_subject1->subject_code_no  ? 'selected' : ''}}>
+                                        {{ $spm_subject1->subject_name}}</option>
+                                    @endforeach
+                                </select></td>
+                            <td><select name="gred8" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_grade as $spm_grade1)
+                                    <option value="{{ $spm_grade1->spm_code,$spm_grade1->value_grade }}"
+                                        {{$academic->gredspm2 == $spm_grade1->spm_code  ? 'selected' : ''}}>
+                                        {{ $spm_grade1->spm_grade}}</option>
+                                    @endforeach
+                                </select>
+                            </td>
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td><input type="text" class="form-control" value="" readonly></td>
-                            <td><input type="text" class="form-control" value="{{$gred3->spm_grade}}" readonly></td>
+                            <td> <select name="sub8" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_subject as $spm_subject1)
+                                    <option value="{{ $spm_subject1->subject_code_no }}"
+                                        {{$academic->kodspm3 == $spm_subject1->subject_code_no  ? 'selected' : ''}}>
+                                        {{ $spm_subject1->subject_name}}</option>
+                                    @endforeach
+                                </select></td>
+                            <td><select name="gred8" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_grade as $spm_grade1)
+                                    <option value="{{ $spm_grade1->spm_code,$spm_grade1->value_grade }}"
+                                        {{$academic->gredspm3 == $spm_grade1->spm_code  ? 'selected' : ''}}>
+                                        {{ $spm_grade1->spm_grade}}</option>
+                                    @endforeach
+                                </select>
+                            </td>
                         </tr>
                         <tr>
                             <td>4</td>
-                            <td><input type="text" class="form-control" value="" readonly></td>
-                            <td><input type="text" class="form-control" value="{{$gred4->spm_grade}}" readonly></td>
+                            <td> <select name="sub8" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_subject as $spm_subject1)
+                                    <option value="{{ $spm_subject1->subject_code_no }}"
+                                        {{$academic->kodspm4 == $spm_subject1->subject_code_no  ? 'selected' : ''}}>
+                                        {{ $spm_subject1->subject_name}}</option>
+                                    @endforeach
+                                </select></td>
+                            <td><select name="gred8" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_grade as $spm_grade1)
+                                    <option value="{{ $spm_grade1->spm_code,$spm_grade1->value_grade }}"
+                                        {{$academic->gredspm4 == $spm_grade1->spm_code  ? 'selected' : ''}}>
+                                        {{ $spm_grade1->spm_grade}}</option>
+                                    @endforeach
+                                </select>
+                            </td>
                         </tr>
                         <tr>
                             <td>5</td>
-                            <td><input type="text" class="form-control" value="" readonly></td>
-                            <td><input type="text" class="form-control" value="{{$gred5->spm_grade}}" readonly></td>
+                            <td> <select name="sub8" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_subject as $spm_subject1)
+                                    <option value="{{ $spm_subject1->subject_code_no }}"
+                                        {{$academic->kodspm5 == $spm_subject1->subject_code_no  ? 'selected' : ''}}>
+                                        {{ $spm_subject1->subject_name}}</option>
+                                    @endforeach
+                                </select></td>
+                            <td><select name="gred8" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_grade as $spm_grade1)
+                                    <option value="{{ $spm_grade1->spm_code,$spm_grade1->value_grade }}"
+                                        {{$academic->gredspm5 == $spm_grade1->spm_code  ? 'selected' : ''}}>
+                                        {{ $spm_grade1->spm_grade}}</option>
+                                    @endforeach
+                                </select>
+                            </td>
                         </tr>
                         <tr>
                             <td>6</td>
-                            <td><input type="text" class="form-control" value="" readonly></td>
-                            <td><input type="text" class="form-control" value="{{$gred6->spm_grade}}" readonly></td>
+                            <td> <select name="sub8" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_subject as $spm_subject1)
+                                    <option value="{{ $spm_subject1->subject_code_no }}"
+                                        {{$academic->kodspm6 == $spm_subject1->subject_code_no  ? 'selected' : ''}}>
+                                        {{ $spm_subject1->subject_name}}</option>
+                                    @endforeach
+                                </select></td>
+                            <td><select name="gred8" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_grade as $spm_grade1)
+                                    <option value="{{ $spm_grade1->spm_code,$spm_grade1->value_grade }}"
+                                        {{$academic->gredspm6 == $spm_grade1->spm_code  ? 'selected' : ''}}>
+                                        {{ $spm_grade1->spm_grade}}</option>
+                                    @endforeach
+                                </select>
+                            </td>
                         </tr>
                         <tr>
                             <td>7</td>
-                            <td><input type="text" class="form-control" value="{{$sub7->subject_name}}" readonly></td>
-                            <td><input type="text" class="form-control" value="{{$gred7->spm_grade}}" readonly></td>
+                            <td> <select name="sub8" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_subject as $spm_subject1)
+                                    <option value="{{ $spm_subject1->subject_code_no }}"
+                                        {{$academic->kodspm7 == $spm_subject1->subject_code_no  ? 'selected' : ''}}>
+                                        {{ $spm_subject1->subject_name}}</option>
+                                    @endforeach
+                                </select></td>
+                            <td><select name="gred8" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_grade as $spm_grade1)
+                                    <option value="{{ $spm_grade1->spm_code,$spm_grade1->value_grade }}"
+                                        {{$academic->gredspm7 == $spm_grade1->spm_code  ? 'selected' : ''}}>
+                                        {{ $spm_grade1->spm_grade}}</option>
+                                    @endforeach
+                                </select>
+                            </td>
                         </tr>
-                        <td>8</td>
-                        <td><input type="text" class="form-control" value="{{$sub8->subject_name}}" readonly></td>
-                        <td><input type="text" class="form-control" value="{{$gred8->spm_grade}}" readonly></td>
+                        <tr>
+                            <td>8</td>
+                            <td> <select name="sub8" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_subject as $spm_subject1)
+                                    <option value="{{ $spm_subject1->subject_code_no }}"
+                                        {{$academic->kodspm8 == $spm_subject1->subject_code_no  ? 'selected' : ''}}>
+                                        {{ $spm_subject1->subject_name}}</option>
+                                    @endforeach
+                                </select></td>
+                            <td><select name="gred8" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_grade as $spm_grade1)
+                                    <option value="{{ $spm_grade1->spm_code,$spm_grade1->value_grade }}"
+                                        {{$academic->gredspm8 == $spm_grade1->spm_code  ? 'selected' : ''}}>
+                                        {{ $spm_grade1->spm_grade}}</option>
+                                    @endforeach
+                                </select>
+                            </td>
                         </tr>
                         <tr>
                             <td>9</td>
-                            <td><input type="text" class="form-control" value="{{$sub9->subject_name}}" readonly></td>
-                            <td><input type="text" class="form-control" value="{{$gred9->spm_grade}}" readonly></td>
+                            <td> <select name="sub9" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_subject as $spm_subject1)
+                                    <option value="{{ $spm_subject1->subject_code_no }}"
+                                        {{$academic->kodspm9 == $spm_subject1->subject_code_no  ? 'selected' : ''}}>
+                                        {{ $spm_subject1->subject_name}}</option>
+                                    @endforeach
+                                </select></td>
+                            <td><select name="gred9" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_grade as $spm_grade1)
+                                    <option value="{{ $spm_grade1->spm_code,$spm_grade1->value_grade }}"
+                                        {{$academic->gredspm9 == $spm_grade1->spm_code  ? 'selected' : ''}}>
+                                        {{ $spm_grade1->spm_grade}}</option>
+                                    @endforeach
+                                </select>
+                            </td>
                         </tr>
                         <tr>
                             <td>10</td>
-                            <td><input type="text" class="form-control" value="{{$sub10->subject_name}}" readonly></td>
-                            <td><input type="text" class="form-control" value="{{$gred10->spm_grade}}" readonly></td>
+                            <td> <select name="sub10" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_subject as $spm_subject1)
+                                    <option value="{{ $spm_subject1->subject_code_no }}"
+                                        {{$academic->kodspm10 == $spm_subject1->subject_code_no  ? 'selected' : ''}}>
+                                        {{ $spm_subject1->subject_name}}</option>
+                                    @endforeach
+                                </select></td>
+                            <td><select name="gred10" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_grade as $spm_grade1)
+                                    <option value="{{ $spm_grade1->spm_code,$spm_grade1->value_grade }}"
+                                        {{$academic->gredspm10 == $spm_grade1->spm_code  ? 'selected' : ''}}>
+                                        {{ $spm_grade1->spm_grade}}</option>
+                                    @endforeach
+                                </select>
+                            </td>
                         </tr>
                         <tr>
                             <td>11</td>
-                            <td><input type="text" class="form-control" value="{{$sub11->subject_name}}" readonly></td>
-                            <td><input type="text" class="form-control" value="{{$gred11->spm_grade}}" readonly></td>
+                            <td> <select name="sub11" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_subject as $spm_subject1)
+                                    <option value="{{ $spm_subject1->subject_code_no }}"
+                                        {{$academic->kodspm11 == $spm_subject1->subject_code_no  ? 'selected' : ''}}>
+                                        {{ $spm_subject1->subject_name}}</option>
+                                    @endforeach
+                                </select></td>
+                            <td><select name="gred11" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_grade as $spm_grade1)
+                                    <option value="{{ $spm_grade1->spm_code,$spm_grade1->value_grade }}"
+                                        {{$academic->gredspm11 == $spm_grade1->spm_code  ? 'selected' : ''}}>
+                                        {{ $spm_grade1->spm_grade}}</option>
+                                    @endforeach
+                                </select>
+                            </td>
                         </tr>
                         <tr>
                             <td>12</td>
-                            <td><input type="text" class="form-control" value="{{$sub12->subject_name}}" readonly></td>
-                            <td><input type="text" class="form-control" value="{{$gred12->spm_grade}}" readonly></td>
+                            <td> <select name="sub12" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_subject as $spm_subject1)
+                                    <option value="{{ $spm_subject1->subject_code_no }}"
+                                        {{$academic->kodspm12 == $spm_subject1->subject_code_no  ? 'selected' : ''}}>
+                                        {{ $spm_subject1->subject_name}}</option>
+                                    @endforeach
+                                </select></td>
+                            <td><select name="gred12" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_grade as $spm_grade1)
+                                    <option value="{{ $spm_grade1->spm_code,$spm_grade1->value_grade }}"
+                                        {{$academic->gredspm12 == $spm_grade1->spm_code  ? 'selected' : ''}}>
+                                        {{ $spm_grade1->spm_grade}}</option>
+                                    @endforeach
+                                </select>
+                            </td>
                         </tr>
                         <tr>
                             <td>13</td>
-                            <td><input type="text" class="form-control" value="{{$sub13->subject_name}}" readonly></td>
-                            <td><input type="text" class="form-control" value="{{$gred13->spm_grade}}" readonly></td>
+                            <td> <select name="sub13" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_subject as $spm_subject1)
+                                    <option value="{{ $spm_subject1->subject_code_no }}"
+                                        {{$academic->kodspm13 == $spm_subject1->subject_code_no  ? 'selected' : ''}}>
+                                        {{ $spm_subject1->subject_name}}</option>
+                                    @endforeach
+                                </select></td>
+                            <td><select name="gred13" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_grade as $spm_grade1)
+                                    <option value="{{ $spm_grade1->spm_code,$spm_grade1->value_grade }}"
+                                        {{$academic->gredspm13 == $spm_grade1->spm_code  ? 'selected' : ''}}>
+                                        {{ $spm_grade1->spm_grade}}</option>
+                                    @endforeach
+                                </select>
+                            </td>
                         </tr>
                         <tr>
                             <td>14</td>
-                            <td><input type="text" class="form-control" value="{{$sub14->subject_name}}" readonly></td>
-                            <td><input type="text" class="form-control" value="{{$gred14->spm_grade}}" readonly></td>
+                            <td> <select name="sub14" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_subject as $spm_subject1)
+                                    <option value="{{ $spm_subject1->subject_code_no }}"
+                                        {{$academic->kodspm14 == $spm_subject1->subject_code_no  ? 'selected' : ''}}>
+                                        {{ $spm_subject1->subject_name}}</option>
+                                    @endforeach
+                                </select></td>
+                            <td><select name="gred14" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_grade as $spm_grade1)
+                                    <option value="{{ $spm_grade1->spm_code,$spm_grade1->value_grade }}"
+                                        {{$academic->gredspm14 == $spm_grade1->spm_code  ? 'selected' : ''}}>
+                                        {{ $spm_grade1->spm_grade}}</option>
+                                    @endforeach
+                                </select>
+                            </td>
                         </tr>
                         <tr>
                             <td>15</td>
-                            <td><input type="text" class="form-control" value="{{$sub15->subject_name}}" readonly></td>
-                            <td><input type="text" class="form-control" value="{{$gred15->spm_grade}}" readonly></td>
+                            <td> <select name="sub15" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_subject as $spm_subject1)
+                                    <option value="{{ $spm_subject1->subject_code_no }}"
+                                        {{$academic->kodspm15 == $spm_subject1->subject_code_no  ? 'selected' : ''}}>
+                                        {{ $spm_subject1->subject_name}}</option>
+                                    @endforeach
+                                </select></td>
+                            <td><select name="gred15" class="form-control select2" disabled>
+                                    <option value=" ">Select</option>
+                                    @foreach($spm_grade as $spm_grade1)
+                                    <option value="{{ $spm_grade1->spm_code,$spm_grade1->value_grade }}"
+                                        {{$academic->gredspm15 == $spm_grade1->spm_code  ? 'selected' : ''}}>
+                                        {{ $spm_grade1->spm_grade}}</option>
+                                    @endforeach
+                                </select>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -712,7 +945,7 @@
                                 <td class="text-center">{{ $i++ }}</td>
                                 <td>{{$document1->file_name}}</td>
                                 <td><a href="/storage/{{$document1->location}}"> {{$document1->location}}</a></td>
-                                
+
                             </tr>
                             @endforeach
                         </tbody>
@@ -723,150 +956,53 @@
 
             <div class="col-md-5 col-lg-3">
                 <p>Do you register through any agent?</p>
-                <td><input type="text" class="form-control" value=""></td>
+                <td><input type="text" class="form-control" value="" readonly></td>
             </div>
+        </div>
 
-
-            <p class="mg-b-20"></p>
-            <center>
-                <div class="outer">
-                    <!-- <form action="save_process.php" method="post"> -->
-                      <!-- <input type="hidden" name="ic" value=""> -->
-                      <div class="inner" style="height:50px;">
-                      <input class="btn btn-success" style="height:50px; width:200px;" data-toggle="modal" data-target="#exampleModal" type="submit" value="Process" name="process">
-                      <input class="btn btn-danger" style="height:50px; width:200px;"  data-toggle="modal" data-target="#exampleModal2" type="submit" value="Reject" name="reject">
-                      <input class="btn btn-warning" style="height:50px; width:200px;"  data-toggle="modal" data-target="#exampleModal3" type="submit" value="KIV" name="kiv">    
-                    </div></div>
-                  <!-- </form> -->
-                </center><br>
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                          <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                              <div class="modal-header">
-                                                  <h5 class="modal-title" id="exampleModalLabel">Offered Course</h5>
-                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                  <span aria-hidden="true">&times;</span>
-                                                  </button>
-                                              </div>
-                                              <div class="modal-body">
-                                              <form action="" method="POST">
-                                                  <div class="table-responsive">
-                                                  <div class="container">
-                                                  <table class="table mg-b-0">
-                                                  
-                                                  <tr>
-                                                  <div class="form-group">
-                                                  <td><label class="form-control-label">IC Number: </label></td>
-                                                  <td></td>
-                                                  </div><!-- form-group -->
-                                                  </tr>
-                                                  <tr>
-                                                  <div class="form-group">
-                                                  <td><label class="form-control-label">Name: </label></td>
-                                                  <td></td>
-                                                  </div><!-- form-group -->
-                                                  </tr>
-                                                  <tr>
-                                                  <div class="form-group">
-                                                  <td><label class="form-control-label">Programme: </label></td>
-                                                  <td>
-                                                  
-                                                  </td>
-                                                  </div><!-- form-group -->
-                                                  </tr>
-                                                  </table>
-                                                  </div>
-                                                  </div>
-                                                  <label class="form-control-label">Offered Course: <span class="tx-danger">*</span></label>
-                                                  <select class="form-control" id="" name="offeredcourse" required>
-                                                  <option value="" selected disabled="" style="font-size:14px;">Please select</option>
-                                                 
-                                                 
-                                                 
-                                                  </select>
-                                              </div>
-                                              <div class="modal-footer">
-                                                  <button type="submit" class="btn btn-primary">Save</button>
-                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                              </div>
-                                              </form>
-                                              </div>
-                                            </div>
-                                          </div>
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                          <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                              <div class="modal-header">
-                                                  <h5 class="modal-title" id="exampleModalLabel">Reject Student</h5>
-                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                  <span aria-hidden="true">&times;</span>
-                                                  </button>
-                                              </div>
-                                              <div class="modal-body">
-                                              <form action="" method="POST">
-                                                  <label class="form-control-label">IC Number: </label>
-                                                  <div class="form-group">
-                                                  <input type="text" class="form-control" value="" placeholder="IC Number" readonly>
-                                                  </div><!-- form-group -->
-                                                  <label class="form-control-label">Name: </label>
-                                                  <div class="form-group">
-                                                  <input type="text" class="form-control" value="" placeholder="IC Number" readonly>
-                                                  </div><!-- form-group -->
-                                   <label class="form-control-label">Reason: </label>
-                                                  <div class="form-group">
-                                                  <input type="text" class="form-control" name="reason" placeholder="Reason">
-                                                  </div><!-- form-group -->
-                                                  <p>Are you sure to reject this application?</p>
-                                              </div>
-                                              <div class="modal-footer">
-                                                  <button type="submit" class="btn btn-primary">Yes</button>
-                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                              </div>
-                                              </form>
-                                              </div>
-                                            </div>
-                                          </div>
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                          <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                              <div class="modal-header">
-                                                  <h5 class="modal-title" id="exampleModalLabel">KIV Student</h5>
-                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                  <span aria-hidden="true">&times;</span>
-                                                  </button>
-                                              </div>
-                                              <div class="modal-body">
-                                              <form action="" method="POST">
-                                                  <label class="form-control-label">IC Number: </label>
-                                                  <div class="form-group">
-                                                  <input type="text" class="form-control" value="" placeholder="IC Number" readonly>
-                                                  </div><!-- form-group -->
-                                                  <label class="form-control-label">Name: </label>
-                                                  <div class="form-group">
-                                                  <input type="text" class="form-control" value="" placeholder="IC Number" readonly>
-                                                  </div><!-- form-group -->
-                                                  <label class="form-control-label">Remark: </label>
-                                                  <div class="form-group">
-                                                  <input type="text" class="form-control" name="remark" placeholder="Remark">
-                                                  </div><!-- form-group -->
-                                                  <p>Are you sure to kiv this application?</p>
-                                              </div>
-                                              <div class="modal-footer">
-                                                  <button type="submit" class="btn btn-primary">Yes</button>
-                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                              </div>
-                                              </form>
-                                              </div>
-                                            </div>
-                                          </div>
-                <center>
-                <div class="outer">
-                    <div><input class="btn btn-az-primary" type="button" onclick="printInvoice();" style="height:50px; width:200px" value="Print"></div>
+        <p class="mg-b-20"></p>
+        <center>
+            <div class="outer">
+                <!-- <form action="save_process.php" method="post"> -->
+                <!-- <input type="hidden" name="ic" value=""> -->
+                <div class="inner" style="height:50px;">
+                    <input class="btn btn-success" style="height:50px; width:200px;" data-toggle="modal"
+                        data-target="#exampleModal" type="submit" value="Process" name="process">
+                    <input class="btn btn-danger" style="height:50px; width:200px;" data-toggle="modal"
+                        data-target="#exampleModal2" type="submit" value="Reject" name="reject">
+                    <input class="btn btn-warning" style="height:50px; width:200px;" data-toggle="modal"
+                        data-target="#exampleModal3" type="submit" value="KIV" name="kiv">
                 </div>
-                </div>
-              
+                <!-- </form> -->
+        </center><br>
+ 
 
-        @endsection
+        <center>
+            <div class="outer">
+                <div><input class="btn btn-az-primary" type="button" onclick="printInvoice();"
+                        style="height:50px; width:200px" value="Print"></div>
+            </div>
+    </div>
+
+    <script>
+        function printInvoice()
+     {
+         printDiv = ".print"; // id of the div you want to print
+         $("*").addClass("no-print");
+         $(printDiv+" *").removeClass("no-print");
+         $(printDiv).removeClass("no-print");
+    
+         parent =  $(printDiv).parent();
+         while($(parent).length)
+         {
+             $(parent).removeClass("no-print");
+             parent =  $(parent).parent();
+         }
+         window.print();
+    
+     }
+     
+  
+     </script>
+@endsection
+

@@ -20,6 +20,7 @@ class ApplicationController extends Controller
     {
         $user = Auth::user();
         $student = User::join('students', 'users.id', '=', 'students.user_id')->where('app_status','=','applied')->get();
+        // $student2 = User::join('students', 'users.id', '=', 'students.user_id')->where('app_status','=','processed')->get();
         // dd($student);
         
         return view('application.index', [compact('user'), 'user'=> $user, 'student'=> $student]);
@@ -28,10 +29,10 @@ class ApplicationController extends Controller
     public function index2()
     {
         $user = Auth::user();
-        $student = User::join('students', 'users.id', '=', 'students.user_id')->where('app_status','=','processed')->get();
-        dd($student);
-        
-        return view('application.index2', [compact('user'), 'user'=> $user, 'student'=> $student]);
+        $student2 = User::join('students', 'users.id', '=', 'students.user_id')->where('app_status','=','processed')->get();
+        // dd($student);
+        // return 'abc';
+        return view('application.index2',['student2'=>$student2]);
     }
 
     /**
@@ -87,6 +88,8 @@ class ApplicationController extends Controller
         $application2 = User::join('parents', 'users.id', '=', 'parents.user_id')->find($id);
         $academic = User::join('academic', 'users.id', '=', 'academic.user_id')->find($id);
         $school_type =DB::table('school_type')->select('school_type_code','school_type_name')->get();
+        $spm_subject =DB::table('spm_subject')->select('subject_code_no','subject_code','subject_name')->get();
+        $spm_grade =DB::table('spm_grade')->select('spm_code','spm_grade','value_grade')->get();
         $sub5 =  DB::table('spm_subject')->select('subject_name')->where('subject_code_no', '=',$academic->kodspm5)->first();
         $sub6 =  DB::table('spm_subject')->select('subject_name')->where('subject_code_no', '=',$academic->kodspm6)->first();
         $sub7 =  DB::table('spm_subject')->select('subject_name')->where('subject_code_no', '=',$academic->kodspm7)->first();
@@ -161,6 +164,8 @@ class ApplicationController extends Controller
                 'gred14'=> $gred14,
                 'gred15'=> $gred15,
                 'document'=> $document,
+                'spm_grade'=> $spm_grade,
+                'spm_subject'=> $spm_subject,
             ]);
     }
 

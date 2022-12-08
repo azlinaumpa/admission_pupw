@@ -205,11 +205,11 @@ class AcademicController extends Controller
             $academic->gredspm4 = $request->input('gred4_A');
             $academic->valuespm4 = $gred4A->value_grade;
             $academic->gredspm5 = $request->input('gred5_A');
-            $academic->valuespm5 = $gred5A->value_grade;
+            $academic->valuespm5 = isset($gred5_A) ? $gred5A->value_grade : null;
             $academic->gredspm6 = $request->input('gred6_A');
-            $academic->valuespm6 = $gred6A->value_grade;
+            $academic->valuespm6 = isset($gred6_A) ? $gred6A->value_grade : null;
             $academic->gredspm7 = $request->input('gred7_A');
-            $academic->valuespm7 = $gred7A->value_grade;
+            $academic->valuespm7 = isset($gred7_A) ? $gred7A->value_grade : null;
         }
         else{
             $academic->kodspm1 = $request->input('sub1B');
@@ -220,45 +220,45 @@ class AcademicController extends Controller
             $academic->kodspm6 = $request->input('sub6B');
             $academic->kodspm7 = $request->input('sub7B');
             $academic->gredspm1 = $request->input('gred1_B');
-            $academic->valuespm1 = $gred1B->value_grade;
+            $academic->valuespm1 = isset($gred1_B) ? $gred1B->value_grade : null;
             $academic->gredspm2 = $request->input('gred2_B');
-            $academic->valuespm2 = $gred2B->value_grade;
+            $academic->valuespm2 = isset($gred2_B) ? $gred2B->value_grade : null;
             $academic->gredspm3 = $request->input('gred3_B');
-            $academic->valuespm3 = $gred3B->value_grade;
+            $academic->valuespm3 = isset($gred3_B) ? $gred3B->value_grade : null;
             $academic->gredspm4 = $request->input('gred4_B');
-            $academic->valuespm4 = $gred4B->value_grade;
+            $academic->valuespm4 = isset($gred4_B) ? $gred4B->value_grade : null;
             $academic->gredspm5 = $request->input('gred5_B');
-            $academic->valuespm5 = $gred5B->value_grade;
+            $academic->valuespm5 = isset($gred5_B) ? $gred5B->value_grade : null;
             $academic->gredspm6 = $request->input('gred6_B');
-            $academic->valuespm6 = $gred6B->value_grade;
+            $academic->valuespm6 = isset($gred6_B) ? $gred6B->value_grade : null;
             $academic->gredspm7 = $request->input('gred7_B');
-            $academic->valuespm7 = $gred7B->value_grade;
+            $academic->valuespm7 = isset($gred7_B) ? $gred7B->value_grade : null;
         }
             
         $academic->kodspm8 = $request->input('sub8');
         $academic->gredspm8 = $request->input('gred8');
-        $academic->valuespm8 = $gred8->value_grade;
+        $academic->valuespm8 = isset($gred8) ? $gred8->value_grade : null;
         $academic->kodspm9 = $request->input('sub9');
         $academic->gredspm9 = $request->input('gred9');
-        $academic->valuespm9 = $gred9->value_grade;
+        $academic->valuespm9 = isset($gred9) ? $gred9->value_grade : null;
         $academic->kodspm10 = $request->input('sub10');
         $academic->gredspm10 = $request->input('gred10');
-        $academic->valuespm10 = $gred10->value_grade; 
+        $academic->valuespm10 = isset($gred10) ? $gred10->value_grade : null; 
         $academic->kodspm11 = $request->input('sub11');
         $academic->gredspm11 = $request->input('gred11');
-        $academic->valuespm11 = $gred11->value_grade;
+        $academic->valuespm11 = isset($gred11) ? $gred11->value_grade : null;
         $academic->kodspm12 = $request->input('sub12');
         $academic->gredspm12 = $request->input('gred12');
-        $academic->valuespm12 = $gred12->value_grade;
+        $academic->valuespm12 = isset($gred12) ? $gred12->value_grade : null;
         $academic->kodspm13 = $request->input('sub13');
         $academic->gredspm13 = $request->input('gred13');
-        $academic->valuespm13 = $gred13->value_grade;
+        $academic->valuespm13 = isset($gred13) ? $gred13->value_grade : null;
         $academic->kodspm14 = $request->input('sub14');
         $academic->gredspm14 = $request->input('gred14');
-        $academic->valuespm14 = $gred14->value_grade;
+        $academic->valuespm14 = isset($gred14) ? $gred14->value_grade : null;
         $academic->kodspm15 = $request->input('sub15');
         $academic->gredspm15 = $request->input('gred15');
-        $academic->valuespm15 = $gred15->value_grade;
+        $academic->valuespm15 = isset($gred15) ? $gred15->value_grade : null;
      
             
            

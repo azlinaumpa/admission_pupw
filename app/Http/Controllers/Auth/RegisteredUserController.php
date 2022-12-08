@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Models\Parents;
 use App\Models\Students;
 use App\Models\Academic;
+use App\Models\ProgrammeApp;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
@@ -59,6 +60,7 @@ class RegisteredUserController extends Controller
         $student = new Students;
         $parent = new Parents;
         $academic = new Academic;
+        $programme = new ProgrammeApp;
 
         $cur=date('y');
         $next=date('y')+1;
@@ -73,10 +75,14 @@ class RegisteredUserController extends Controller
 
         $academic->ic = $request->password;
         $academic->user_id = request()->user()->id;
+
+        $programme->ic = $request->password;
+        $programme->user_id = request()->user()->id;
        
         $student->save();
         $parent->save();
         $academic->save();
+        $programme->save();
 
         return redirect(RouteServiceProvider::HOME);
     }

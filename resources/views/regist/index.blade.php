@@ -29,7 +29,7 @@
                         <td>{{$user->email}}</td>
                         <td>
                             
-                            <form method="POST" action="/regist/{{$user->id}}">
+                            <form method="POST" action="{{route ('regist.destroy',$user->id)}}">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger btn-sm float-right">Delete</button>

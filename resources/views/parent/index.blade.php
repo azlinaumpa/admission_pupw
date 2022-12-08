@@ -78,7 +78,7 @@
                                             class="tx-danger">*</span></label>
                                     <select name="p1_marital" class="form-control select2" >
                                         <option value="">SELECT</option>
-                                        @foreach($marital1 as $marital1)
+                                        @foreach($marital as $marital1)
                                         <option value="{{ $marital1->status_code }}"
                                             {{$parents->p1_marital == $marital1->status_code  ? 'selected' : ''}}>
                                             {{ $marital1->status_name}}</option>

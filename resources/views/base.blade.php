@@ -16,7 +16,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" >
 
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" ></script>
+ 
     <!-- Twitter -->
     <!-- <meta name="twitter:site" content="@bootstrapdash">
     <meta name="twitter:creator" content="@bootstrapdash">
@@ -51,8 +56,10 @@
     <link href="../lib/jqvmap/jqvmap.min.css" rel="stylesheet">
 
     <!-- azia CSS -->
-    <link rel="stylesheet" href={{ URL::asset("../css/azia.css")}}>
+    <link rel="stylesheet" href={{ url('css/azia.css')}}>
+    {{-- {{url('lib/fontawesome-free/css/all.min.css')}} --}}
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    {{-- <link rel="stylesheet" href="css/azia.css"> --}}
     <script type="text/css" src='print.css' media="print" /></script>
     <style>
      @media print {
@@ -61,7 +68,9 @@
         display : none !important;
               }
                   }
+                  
     </style>
+
     
   </head>
   @yield('head')
@@ -85,7 +94,9 @@
             <a href="{{url('/dashboard')}}" class="nav-link"><i class="typcn typcn-clipboard"></i>Dashboard</a>
             </li><!-- nav-item -->
           <li class="nav-item active show">
-            <a href="" class="nav-link with-sub"><i class="typcn typcn-clipboard"></i>Application</a>
+            <a href="" class="nav-link with-sub"><i class="typcn typcn-clipboard"></i>Application</a> <ul class="nav-sub">
+              <li class="nav-sub-item"><a href="{{url('/programme')}}" class="nav-sub-link">Programme Information</a></li>
+            </ul>
             <ul class="nav-sub">
               <li class="nav-sub-item"><a href="{{url('/personal')}}" class="nav-sub-link">Personal Information</a></li>
             </ul>
@@ -105,7 +116,7 @@
             <ul class="nav-sub">
               <li class="nav-sub-item"><a href="{{url('/application')}}" class="nav-sub-link">List of Application</a></li>
             </ul><ul class="nav-sub">
-              <li class="nav-sub-item"><a href="{{url('/application/index2')}}" class="nav-sub-link">List of Processed</a></li>
+              <li class="nav-sub-item"><a href="{{url('/application/processed')}}" class="nav-sub-link">List of Processed</a></li>
             </ul>
           </li><!-- nav-item -->
           @else
@@ -180,25 +191,33 @@
     <script src="../lib/jqvmap/jquery.vmap.min.js"></script>
     <script src="../lib/jqvmap/maps/jquery.vmap.usa.js"></script>
 
-    <script src="../js/azia.js"></script>
-    <script>
-      function printInvoice()
-     {
-         printDiv = ".print"; // id of the div you want to print
-         $("*").addClass("no-print");
-         $(printDiv+" *").removeClass("no-print");
-         $(printDiv).removeClass("no-print");
-    
-         parent =  $(printDiv).parent();
-         while($(parent).length)
-         {
-             $(parent).removeClass("no-print");
-             parent =  $(parent).parent();
-         }
-         window.print();
-    
-     }
-</script>    
+     <!-- BASIC MODAL -->
+     <div id="modaldemo1" class="modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content modal-content-demo">
+          <div class="modal-header">
+            <h6 class="modal-title">Message Preview</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h6>Why We Use Electoral College, Not Popular Vote</h6>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-indigo">Save changes</button>
+            <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
+
+
+
+
+
+    <script src="{{ asset('js/azia.js') }}"></script> 
     <script>
       $(function(){
         'use strict'
